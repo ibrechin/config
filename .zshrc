@@ -12,7 +12,7 @@ ZSH_THEME="ohmyword"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -27,7 +27,7 @@ CASE_SENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -43,7 +43,12 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 
 alias ll='ls -alhF'
 
+#Setup virtual envwrapper for python in case default doesn't work
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.4
+export VIRTUALENVWRAPPER_PYTHON
+
 WORKON_HOME=~/environments/
+PROJECT_HOME=~/clones/
 source /usr/local/bin/virtualenvwrapper.sh
 
 export GOPATH=~/golang
@@ -57,3 +62,9 @@ alias fpa='ps aux | grep '
 HISTCONTROL='ignorespace'
 
 alias xclip='xclip -selection c'
+
+alias grb='git rebase -i '
+
+if [[ -f ~/.zshrc-local && -r ~/.zshrc-local ]]; then
+	source ~/.zshrc-local
+fi
