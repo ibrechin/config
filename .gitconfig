@@ -5,6 +5,7 @@
 	default = simple
 [core]
 	editor = vi
+	excludesfile = /home/ian/.gitignore_global
 [diff]
 	tool = meld
 [alias]

@@ -7,9 +7,13 @@ function grb
 end
 
 function gcm
-	git commit
+	git commit $argv
 end
 
 function gco
-	git checkout
+	git checkout $argv
+end
+
+function gpom
+	git pull origin master
 end
