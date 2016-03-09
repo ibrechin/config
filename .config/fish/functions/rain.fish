@@ -1,4 +1,4 @@
 function rain
-	cat /dev/urandom | aplay -c 32 -r 8000
+	play -c 2 -n synth pinknoise
 end
 	
