@@ -5,11 +5,14 @@
 	default = simple
 [core]
 	editor = vi
-	excludesfile = /home/ian/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [diff]
 	tool = meld
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	co = checkout
+	new = checkout -b
+	del = branch -d
 [rebase]
 	autosquash = true
 
