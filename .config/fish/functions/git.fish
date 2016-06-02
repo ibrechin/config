@@ -6,10 +6,6 @@ function grb
 	git rebase -i $argv
 end
 
-function gcm
-	git commit $argv
-end
-
 function gco
 	git checkout $argv
 end
