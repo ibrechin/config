@@ -1,4 +1,3 @@
 function rain
-	play -c 2 -n synth pinknoise
+	play -c 4 -n synth pinknoise
 end
-	
