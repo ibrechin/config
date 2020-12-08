@@ -1,6 +1,8 @@
 [user]
 	email = ian.brechin@gmail.com
 	name = Ian Brechin
+[pull]
+	ff = only
 [push]
 	default = simple
 [core]
