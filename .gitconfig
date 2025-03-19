@@ -1,33 +1,27 @@
 [user]
 	email = ian.brechin@gmail.com
 	name = Ian Brechin
-[pull]
-	ff = only
 [push]
 	default = simple
 [core]
 	editor = vi
 	excludesfile = ~/.gitignore_global
 [diff]
-	tool = meld
+	tool = smerge
+[rebase]
+	autosquash = true
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	co = checkout
 	new = checkout -b
 	del = branch -d
-	po = pull origin
-[rebase]
-	autosquash = true
-
-[url "git@github.com:"]
-  insteadOf = "gh:"
-  pushInsteadOf = "github:"
-  pushInsteadOf = "git://github.com/"
-[url "git://github.com/"]
-  insteadOf = "github:"
-[url "git@gist.github.com:"]
-  insteadOf = "gst:"
-  pushInsteadOf = "gist:"
-  pushInsteadOf = "git://gist.github.com/"
-[url "git://gist.github.com/"]
-  insteadOf = "gist:"
+	fix = commit -a --fixup
+	puo = push -u origin
+[help]
+	autocorrect = prompt
+[pager]
+	branch = false

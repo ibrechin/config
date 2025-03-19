@@ -1,7 +1,6 @@
 set -x PATH /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/games usr/local/games
 
 set -x PROJECT_HOME ~/clones/
-eval (python -m virtualfish compat_aliases)
 
 set -x GOPATH ~/golang
 
@@ -17,3 +16,6 @@ end
 . /usr/share/autojump/autojump.fish
 
 set fish_greeting
+
+set -x PGUSER ian
+set -x PGPASS ian
